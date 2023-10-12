@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MINT</title>
+</head>
+<body>
+  <h1>MINT</h1>
+  <button id="connectWalletButton">连接钱包并铸造 NFT</button>
+  <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/merkletreejs@0.3.10/merkletree.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/keccak256@1.0.6/keccak256.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const connectWalletButton = document.getElementById('connectWalletButton');
+
+      connectWalletButton.addEventListener('click', connectWallet);
+    });
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
